@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url("https://fonts.googleapis.com/css?family=Fjalla+One&display=swap");
+
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/38816/image-from-rawpixel-id-2210775-jpeg.jpg") center center no-repeat;
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  display:grid;
+  justify-items: center;
+  background-color: rgb(249, 241, 160);
+  
+}
+
+
