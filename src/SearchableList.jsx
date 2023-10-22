@@ -6,10 +6,25 @@ import { useNavigate } from "react-router-dom";
 
 const Selector = () => {
   const options = [
-    "Matematika",
-    "IPA",
-    "IPS",
-    "Bahasa Inggris"
+    "Fisika",
+    "Kimia",
+    "SKI",
+    "Matematika Wajib",
+    "Matematika Minat",
+    "PPKN",
+    "Biologi",
+    "Ekonomi",
+    "Bahasa Inggris",
+    "Bahasa Indonesia",
+    "Bahasa Jawa",
+    "Bahasa Arab",
+    "Seni Budaya",
+    "Akidah Akhlak",
+    "Sejarah",
+    "Fikih",
+    "BK",
+    "Quran Hadist",
+    "PJOK",
   ];
 
   const [inputValue, setInputValue] = useState("");
@@ -45,7 +60,7 @@ const Selector = () => {
       ket : formData.description, // Mengirim nilai deskripsi dari state 'formData'
     };
     console.log(dataToSend);
-      const response = await axios.post("http://localhost:3000/postPR", dataToSend);
+      const response = await axios.post("https://api-sekolah.arul251.repl.co/postPR", dataToSend);
 
       if (response.status === 201) {
         setFormSubmitted(true);
