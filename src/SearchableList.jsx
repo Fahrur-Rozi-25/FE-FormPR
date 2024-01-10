@@ -60,7 +60,7 @@ const Selector = () => {
       ket : formData.description, // Mengirim nilai deskripsi dari state 'formData'
     };
     console.log(dataToSend);
-      const response = await axios.post("https://api-sekolah.arul251.repl.co/postPR", dataToSend);
+      const response = await axios.post("https://rozistorebe.tokorozy.my.id/api-school/postPR", dataToSend);
 
       if (response.status === 201) {
         setFormSubmitted(true);
